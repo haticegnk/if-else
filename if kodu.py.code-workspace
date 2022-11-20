@@ -1,7 +1,12 @@
-{
-	"folders": [
-		{
-			"path": "../Documents"
-		}
-	]
-}
+print("ehliyet alabilme durumunuzu kontrol için isim, yaş ve eğitim bilgilerinizi giriniz: ")
+isim=input("isim: ")
+yas=int(input("yaş:"))
+egitim=input("eğitim durumu: ")
+
+if (yas>=18):
+    if(egitim=="lise" or egitim=="üniversite"):
+        print("ehliyet alabilirsiniz" , isim , "hanım")
+    else:
+        print("eğitim durumunuz yeterli değil")
+else:
+    print("ehliyet için yaş yeterliliğiniz yoktur.")
